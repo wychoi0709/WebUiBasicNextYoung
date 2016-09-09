@@ -1,0 +1,581 @@
+/*! HTML5 Boilerplate v5.3.0 | MIT License | https://html5boilerplate.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+    height: 100%;
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+body {
+    height: 100%;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+
+.header{
+    height: 90px;
+    background-image: url("../img/bg_head.png");
+}
+
+.headerContents{
+    padding-top: 15px;
+    padding-left: 20px;
+    padding-bottom: 12px;
+}
+
+.searchingText{
+    height: 17px;
+    margin-left: 10px;
+    border: 3px solid #4bf20a ;
+    background: #35353f;
+    color: #ffffff;
+    font-size: 12px;
+    width: 180px;
+}
+
+.noBtnCss{
+    padding: 0px;
+    border: 0;
+    background: transparent;
+}
+
+/* Navigation CSS code START */
+
+ul {
+    margin:0px;
+    padding: 0px;
+    list-style-type: none;
+}
+
+li{
+    display: inline;
+}
+
+.inlineBlock{
+    display: block;
+    float: left;
+}
+
+.musicHomeNavigation{
+    width: 79px;
+    height: 33px;
+    background: url("../img/menu/musichomebasic.jpg");
+}
+
+.musicHomeNavigation:hover{
+    background: url("../img/menu/musichomehover.jpg");
+}
+
+.myMusicNavigation{
+    width:84px;
+    height: 33px;
+    background: url("../img/menu/mymusicbasic.jpg");
+}
+
+.myMusicNavigation:hover{
+    background: url("../img/menu/mymusichover.jpg");
+}
+
+.todayMusicNavigation{
+    width: 98px;
+    height: 33px;
+    background: url("../img/menu/todaymusicbasic.jpg");
+}
+
+.todayMusicNavigation:hover{
+    background: url("../img/menu/todaymusichover.jpg");
+}
+
+.leagueNavigation{
+    width: 118px;
+    height: 33px;
+    background: url("../img/menu/leaguebasic.jpg");
+}
+
+.leagueNavigation:hover{
+    background: url("../img/menu/leaguehover.jpg");
+}
+
+.onStageNavigation{
+    width: 97px;
+    height: 33px;
+    background: url("../img/menu/onstagebasic.jpg");
+}
+
+.onStageNavigation:hover{
+    background: url("../img/menu/onstagehover.jpg");
+}
+
+.ticketNavigation{
+    width: 119px;
+    height: 33px;
+    background: url("../img/menu/ticketbasic.jpg");
+}
+
+.ticketNavigation:hover{
+    background: url("../img/menu/tickethover.jpg");
+}
+
+.hdNavigation{
+    width: 82px;
+    height: 33px;
+    background: url("../img/menu/hdbasic.jpg");
+}
+
+.hdNavigation:hover{
+    background: url("../img/menu/hdhover.jpg");
+}
+
+.radioNavigation{
+    width: 76px;
+    height: 33px;
+    background: url("../img/menu/radiobasic.jpg");
+}
+
+.radioNavigation:hover{
+    background: url("../img/menu/radiohover.jpg");
+}
+
+/* Navigation CSS code END */
+
+/* SubNavigation CSS code START*/
+.section{
+    display: block;
+    height: 100%;
+}
+.subNavigationBar{
+    float: left;
+    display: inline-block;
+    width: 170px;
+    height: 100%;
+    background: url("http://static.naver.net/music/2015/bg_snb_v2.png") repeat-y;
+}
+.musicPlayerWrapper{
+    width: 170px;
+    height: 49px;
+    background: url("../img/bg_musicplayer.gif");
+}
+.musicPlayer{
+    width:153px;
+    height: 34px;
+    position: relative;
+    background: url("../img/musicplayerbasic.jpg");
+}
+.musicPlayer:hover{
+    background: url("../img/musicplayerhover.jpg");
+}
+/* SubNavigation CSS code END*/
+
+
+.mainContent{
+    position: relative;
+    margin-left: 170px;
+}
+
+
+div.homeBoxOutter {
+    width: 998px;
+    height: 340px;
+    margin-left: 50px;
+    overflow: hidden;
+}
+
+div.homeBoxInner {
+    overflow: hidden;
+    box-sizing: border-box;
+    width: 1997px;
+    height: 480px;
+    padding: 15px 0;
+    /*background-color: #eee;*/
+}
+
+button.slide {
+    position: absolute;
+    width: 30px;
+    height: 61px;
+    border: none;
+}
+
+button.left {
+    top: 259px;
+    left: 10px;
+    background-image: url("../img/btn_arrow_left.png");
+}
+
+button.right {
+    top: 259px;
+    left: 1055px;
+    background-image: url("../img/btn_arrow_right.png");
+}
+
+.homeBoxItem {
+    display: inline-block;
+    margin: 5px;
+
+    width: 235px;
+    height: 254px;
+    border: 1px solid #777;
+}
+
+.homeBoxItem img {
+    display: inline-block;
+    width: 235px;
+    height: 147px;
+    object-fit: cover;
+}
+
+.homeBoxItem .caption {
+    display: inline-block;
+    box-sizing: border-box;
+
+    padding: 5px;
+    width: 100%;
+    height: 107px;
+    background-color: #fff;
+}
+
+.homeBoxItem .caption h1{
+    margin: 0;
+    color: #27C;
+    font-size: 12px;
+}
+
+.homeBoxItem .caption p {
+    margin: 0;
+    color: #333;
+    font-size: 14px;
+}
+
+.todayMusicUl{
+    border: solid #000000 1px;
+    border-top: solid #000 2px;
+    border-width: 2px 0px 1px 0px;
+}
+
+.todayMusicUl a li{
+    display: inline-block;
+    width: 130px;
+    height: 25px;
+    border: solid #000 0.3px;
+    border-width: 0 0.3px 0 0.3px;
+    text-align: center;
+    padding-top: 16px;
+    font-size: 12px;
+}
+
+.todayMusicUl a:visited{
+    color: inherit;
+    text-decoration: none;
+
+}
+
+.marginLeftForTodayMusic{
+    margin-left: 22px;
+}
+
+.todayMusicBtnActive{
+    background: #2277CC;
+    color: #ffffff;
+}
+
+.titleTodayMusic{
+    padding: 10px 10px 10px 20px;
+}
+
+h2, h3, p{
+    margin: 0;
+}
+
+h3{
+    margin-top: 20px;
+}
+
+.homeBox{
+    background-color: #eee;
+}
+
+.subNavWrapper{
+    padding:10px;
+    font-size: 14px;
+}
+.subNavWrapper ul, li{
+    display: block;
+}
+.closedNav{
+    display: none !important;
+}
+.openedNav{
+}
+.subNavWrapper a{
+    color: #000;
+    text-decoration: none;
+}
+.subNavWrapper a:visited{
+    color: #000;
+    text-decoration: none;
+}
+.subNavWrapper ul{
+    margin-left: 20px;
+    list-style-type: disc;
+}
+.subNavWrapper li{
+    list-style-type: disc;
+}
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden {
+    display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 1.25dppx),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   http://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after,
+    *:first-letter,
+    *:first-line {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster:
+                                   http://www.sanbeiji.com/archives/953 */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
